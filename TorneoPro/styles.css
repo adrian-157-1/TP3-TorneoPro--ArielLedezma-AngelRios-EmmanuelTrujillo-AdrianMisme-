@@ -1,0 +1,444 @@
+
+/* =================================
+   CONFIGURACIÓN GENERAL
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+    color: white;
+
+    /* Fondo con imagen y capa negra al 50% */
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("img/fondo.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* Permite que el footer quede al final */
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =================================
+   BARRA DE NAVEGACIÓN FIJA
+================================= */
+
+.encabezado {
+    width: 100%;
+    height: 42px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 10px;
+
+    background-color: white;
+    color: #222;
+
+    /* Siempre permanece arriba */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 20px;
+    height: 24px;
+
+    object-fit: contain;
+}
+
+
+/* ENLACES DEL MENÚ */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    font-size: 11px;
+}
+
+.menu a {
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #008ee8;
+}
+
+
+/* PERFIL */
+
+.perfil {
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid #ccc;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+}
+
+
+/* =================================
+   CONTENIDO PRINCIPAL
+================================= */
+
+main {
+    width: 100%;
+
+    /* Evita que la barra fija tape la portada */
+    padding-top: 42px;
+
+    /* Permite que el footer baje cuando
+       la página tiene poco contenido */
+    flex: 1 0 auto;
+}
+
+
+/* =================================
+   PORTADA
+================================= */
+
+.portada {
+    width: 100%;
+    height: 800px;
+
+    /* Espacio reservado para tu imagen */
+    background-color: transparent;
+    overflow: hidden;
+}
+
+
+/* Cuando agregues la imagen al HTML */
+
+.portada img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =================================
+   SECCIÓN CREAR TORNEOS
+================================= */
+
+.seccion-crear {
+    height: 54px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+
+    background-color: white;
+}
+
+
+/* DECORACIÓN AZUL */
+
+.seccion-crear::before {
+    content: "";
+
+    position: absolute;
+    width: 250px;
+    height: 100px;
+
+    right: -65px;
+    top: -25px;
+
+    transform: rotate(-35deg);
+
+    background: repeating-linear-gradient(
+        90deg,
+        #0875e1 0px,
+        #0875e1 12px,
+        #00baff 12px,
+        #00baff 22px,
+        white 22px,
+        white 29px
+    );
+}
+
+
+/* BOTÓN */
+
+.boton-crear {
+    width: 125px;
+    height: 42px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    z-index: 1;
+
+    border: 1px solid #0876d1;
+    border-radius: 10px;
+
+    background-color: #08a9f5;
+    color: #001b35;
+
+    font-size: 10px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.boton-crear:hover {
+    background-color: #007fd1;
+    color: white;
+
+    transform: scale(1.04);
+}
+
+
+/* =================================
+   SECCIÓN DE CONTENIDO E IMÁGENES
+================================= */
+
+.contenido {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 15px;
+
+    padding: 25px 10.5% 30px;
+
+    /* Se ve el fondo de la página */
+    background-color: transparent;
+}
+
+
+/* TÍTULOS */
+
+.tablas h2,
+.registros h2 {
+    margin: 0 0 7px 5px;
+
+    color: white;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+
+/* ESPACIOS RESERVADOS PARA IMÁGENES */
+
+.espacio-imagen {
+    width: 100%;
+
+    background-color: #d7d7d7;
+
+    overflow: hidden;
+}
+
+
+/* IMAGEN IZQUIERDA */
+
+.imagen-tablas {
+    height: 250px;
+}
+
+
+/* IMÁGENES DERECHAS */
+
+.registros {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-registro {
+    height: 125px;
+    margin-bottom: 20px;
+}
+
+
+/* IMÁGENES QUE AGREGARÁS DESPUÉS */
+
+.espacio-imagen img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* =================================
+   FOOTER AL FINAL DE LA PÁGINA
+================================= */
+
+.pie {
+    width: 100%;
+    min-height: 100px;
+
+    margin-top: auto;
+    padding: 15px 10px;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 12px;
+
+    background-color: rgba(0, 0, 0, 0.35);
+    color: white;
+
+    font-size: 9px;
+}
+
+
+/* CONTACTO */
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contacto a:hover {
+    text-decoration: underline;
+}
+
+
+/* REDES SOCIALES */
+
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.redes a {
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid white;
+    border-radius: 50%;
+
+    font-size: 10px;
+}
+
+
+/* DERECHOS DE AUTOR */
+
+.copyright {
+    grid-column: 1 / -1;
+
+    margin: 0;
+    padding-top: 8px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+    text-align: center;
+    font-size: 8px;
+}
+
+
+/* =================================
+   ADAPTACIÓN A CELULARES
+================================= */
+
+@media (max-width: 600px) {
+
+    .encabezado {
+        height: 45px;
+        padding: 0 7px;
+    }
+
+    .logo {
+        font-size: 12px;
+    }
+
+    .menu {
+        gap: 8px;
+        font-size: 9px;
+    }
+
+    main {
+        padding-top: 45px;
+    }
+
+    .portada {
+        height: 200px;
+    }
+
+    .contenido {
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 10px;
+
+        padding: 25px 6%;
+    }
+
+    .imagen-tablas {
+        height: 200px;
+    }
+
+    .imagen-registro {
+        height: 95px;
+        margin-bottom: 15px;
+    }
+
+    .pie {
+        min-height: 100px;
+        padding: 12px 8px;
+    }
+}
