@@ -12,11 +12,11 @@
 
 <body>
 
-    <!-- BARRA DE NAVEGACIÓN -->
+    <!---------------   BARRA DE NAVEGACIÓN   --------------->
     <header class="encabezado">
 
         <a href="index.html" class="logo">
-            <img src="img/logo.png" alt="Logo Torneo Pro">
+            <img src="img/logo.png" alt="Logo de Torneo Pro">
             <span>Torneo Pro</span>
         </a>
 
@@ -25,26 +25,76 @@
             <a href="tienda.html">Tienda</a>
             <a href="torneos.html">Torneos</a>
 
-            <a href="usuario.php" class="perfil" aria-label="Mi perfil">
-                <span>👤</span>
+            <a href="usuario.php" class="avatar">
+                <img src="img/avatar.png" alt="Avatar del usuario">
             </a>
         </nav>
 
     </header>
 
 
-    <!-- CONTENIDO DE LA PÁGINA -->
+
+
+
+
+
+
+
+
+    <!---------------   CONTENIDO PRINCIPAL   --------------->
     <main>
 
-        <!-- PORTADA PRINCIPAL -->
-        <section class="portada">
+        <!-- CARRUSEL AUTOMÁTICO -->
+        <section class="carrusel">
 
-            <!-- Acá vas a colocar tu imagen de fútbol -->
+            <!-- PRIMERA PORTADA -->
+            <article class="diapositiva activa">
+
+                <img src="img/portada-1.jpg"    class="imagen-portada">
+
+                <div class="filtro-portada"></div>
+
+                <div class="texto-portada">
+                    <h1>Organizá tu propio torneo</h1>
+
+                    <p>
+                        Torneo Pro te permite organizar torneos
+                        de fútbol, registrar equipos y administrar
+                        tus competiciones desde un solo lugar.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- SEGUNDA PORTADA -->
+            <article class="diapositiva">
+
+                <img src="img/portada-2.jpg" class="imagen-portada">
+
+                <div class="filtro-portada"></div>
+
+                <div class="texto-portada">
+                    <h2>Todo tu torneo organizado</h2>
+
+                    <p>
+                        Consultá las tablas de posiciones,
+                        organizá los partidos y mantené toda
+                        la información de tu torneo ordenada.
+                    </p>
+                </div>
+
+            </article>
 
         </section>
 
 
-        <!-- BOTÓN CREAR TORNEOS -->
+
+
+
+
+
+        <!---------------   BOTÓN  CREAR TORNEOS   --------------->
         <section class="seccion-crear">
 
             <a href="crear-torneo.php" class="boton-crear">
@@ -54,63 +104,113 @@
         </section>
 
 
-        <!-- SECCIÓN DE IMÁGENES -->
+
+
+
+
+        <!---------------   CONTENIDO   --------------->
         <section class="contenido">
 
-            <!-- IMAGEN DE LAS TABLAS -->
-            <div class="tablas">
+            <!-- IMAGEN GRANDE -->
+            <article class="tarjeta tarjeta-tablas">
 
                 <h2>Cómo se verán las tablas</h2>
 
-                <div class="espacio-imagen imagen-tablas">
-                    <!-- Acá va tu imagen de las tablas -->
+                <div class="contenedor-imagen">
+                    <img  src="img/tablas.jpg">
                 </div>
 
+                <p>
+                    Consultá las posiciones, los puntos,
+                    los partidos jugados y los resultados
+                    de cada equipo.
+                </p>
+
+            </article>
+
+
+            <!-- DOS IMÁGENES -->
+            <div class="columna-registros">
+
+                <article class="tarjeta">
+
+                    <h2>Registro de equipos</h2>
+
+                    <div class="contenedor-imagen">
+                        <img src="img/equipos.jpg">
+                    </div>
+
+                    <p>
+                        Conocé cómo se mostrarán los equipos
+                        registrados en cada torneo.
+                    </p>
+
+                </article>
+
+
+                <article class="tarjeta">
+
+                    <h2>Partidos y resultados</h2>
+
+                    <div class="contenedor-imagen">
+                        <img src="img/partidos.jpg">
+                    </div>
+
+                    <p>
+                        Organizá los encuentros y consultá
+                        los resultados de cada partido.
+                    </p>
+
+                </article>
             </div>
-
-
-            <!-- IMÁGENES DE REGISTROS -->
-            <div class="registros">
-
-                <h2>Registros</h2>
-
-                <div class="espacio-imagen imagen-registro">
-                    <!-- Acá va la primera imagen -->
-                </div>
-
-                <div class="espacio-imagen imagen-registro">
-                    <!-- Acá va la segunda imagen -->
-                </div>
-
-            </div>
-
         </section>
-
     </main>
 
 
-    <!-- PIE DE PÁGINA -->
-    <footer class="pie">
 
-        <div class="contacto">
-            <strong>Contáctanos</strong>
-            <a href="mailto:contacto@torneopro.com">
-                Correo electrónico
+
+
+
+
+    <!---------------   FOOTER   --------------->
+    <footer class="Footer">
+
+        <!-- INFORMACIÓN-->
+        <div class="informacion-footer">
+            <span>© 2026 Torneo Pro</span>
+            <a href="contacto.html">Contacto 11 2456-2353</a>
+            <a href="Correo.html">CorreoElectronico@gmail.com</a>
+        </div>
+
+        <!-- LOGOS DE ENLACES A LA DERECHA -->
+        <div class="enlaces-footer">
+
+            <a href="#">
+                <img src="img/enlace-1.png" alt="Facebook">
             </a>
-        </div>
 
-        <div class="redes">
-            <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="Instagram">◎</a>
-            <a href="#" aria-label="YouTube">▶</a>
-            <a href="#" aria-label="TikTok">♪</a>
-        </div>
+            <a href="#">
+                <img src="img/enlace-2.png" alt="Instagram">
+            </a>
 
-        <p class="copyright">
-            © 2026 Torneo Pro - Todos los derechos reservados
-        </p>
+            <a href="#">
+                <img src="img/enlace-3.png" alt="Youtube">
+            </a>
+
+            <a href="#">
+                <img src="img/enlace-4.png" alt="X">
+            </a>
+            
+            <a href="#">
+                <img src="img/enlace-4.png" alt="Whatsap">
+            </a>
+
+        </div>
 
     </footer>
+
+
+    <script src="js/torneoPro.js"></script>
 
 </body>
 </html>
