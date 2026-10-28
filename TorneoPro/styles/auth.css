@@ -1,0 +1,140 @@
+/* ===== LOGIN Y REGISTRO ===== */
+* { box-sizing: border-box; }
+ 
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url("../img/home/fondo-1.avif") center top / cover no-repeat;
+}
+ 
+a { text-decoration: none; }
+ 
+/* Tarjeta: 600px de ancho. Login más bajo, registro de 700px */
+.tarjeta-auth {
+    width: 600px;
+    max-width: 100%;
+    min-height: 550px;
+    padding: 40px 72px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    background-color: #014a85;
+}
+ 
+.tarjeta-auth.registro { min-height: 700px; }
+ 
+/* Pestañas Inicio Sesion / Registrar */
+.pestanas {
+    display: flex;
+    margin-bottom: 36px;
+    overflow: hidden;
+    border: 1px solid #cfe3f5;
+    border-radius: 10px;
+}
+ 
+.pestanas a {
+    flex: 1;
+    padding: 16px 0;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+ 
+.pestanas a.activa { background-color: #000; }
+.pestanas a:not(.activa):hover { background-color: rgba(255, 255, 255, 0.1); }
+ 
+/* Formulario */
+form { display: flex; flex-direction: column; flex: 1; }
+ 
+label { margin-bottom: 4px; font-size: 15px; }
+ 
+input {
+    width: 100%;
+    height: 38px;
+    margin-bottom: 14px;
+    padding: 0 12px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 15px;
+}
+ 
+input:focus { outline: 2px solid #08a9f5; }
+ 
+.boton-negro {
+    height: 48px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #000;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+ 
+.boton-negro:hover { background-color: #222; }
+ 
+/* Separador con círculo */
+.separador {
+    margin: 26px 0 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+ 
+.separador::before,
+.separador::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #000;
+}
+ 
+.separador span {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+ 
+/* Botón de Google */
+.boton-google {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+}
+ 
+.boton-google svg { width: 24px; height: 24px; }
+ 
+/* Avisos (error / éxito) */
+.aviso {
+    margin-bottom: 16px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background-color: #ffd9d9;
+    color: #7a0000;
+    font-size: 14px;
+}
+ 
+.aviso.ok { background-color: #d8f5df; color: #0b4d1c; }
+ 
+/* Celular */
+@media (max-width: 640px) {
+    .tarjeta-auth { padding: 28px 20px; }
+}

@@ -1,0 +1,78 @@
+/* ===== BASE: general + navegación + footer (para las páginas de views/) ===== */
+* { box-sizing: border-box; }
+ 
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background: url("../img/home/fondo-1.avif") center top / cover no-repeat;
+}
+ 
+a { color: #000; text-decoration: none; }
+img { display: block; }
+main { width: 100%; padding-top: 64px; flex: 1 0 auto; }
+ 
+/* Navegación */
+.encabezado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 50px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+ 
+.encabezado,
+.pie {
+    background-color: white;
+    color: #222;
+}
+ 
+.logo { display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: bold; }
+.logo img { width: 34px; height: 42px; object-fit: contain; }
+ 
+.menu { display: flex; align-items: center; gap: 24px; font-size: 14px; }
+ 
+.menu a:hover,
+.informacion-footer a:hover { color: #008ee8; }
+ 
+.avatar { width: 36px; height: 36px; }
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+ 
+/* Footer */
+.pie {
+    width: 100%;
+    min-height: 50px;
+    padding: 8px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+ 
+.informacion-footer { display: flex; flex-direction: column; gap: 2px; }
+.enlaces-footer { display: flex; align-items: center; gap: 8px; }
+ 
+.enlaces-footer a {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.enlaces-footer img { width: 100%; height: 100%; object-fit: contain; }
