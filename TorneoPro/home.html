@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Torneo Pro</title>
+
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+
+<body>
+
+    <!---------------   BARRA DE NAVEGACIÓN   --------------->
+    <header class="encabezado">
+
+        <a href="home.html" class="logo">
+        <!-- LOGO: poné el enlace de tu imagen en src -->
+        <img src="" alt="Logo de Torneo Pro">
+        <span>Torneo Pro</span>
+        </a>
+
+        <nav class="menu">
+            <a href="home.html">Home</a>
+            <a href="views/tienda.php">Tienda</a>
+            <a href="views/torneos.php">Torneos</a>
+        
+            <a href="views/login.php" class="avatar">
+                <img src="img/iconos/avatar.jpg" alt="Iniciar sesión o registrarse">
+            </a>
+        </nav>
+
+    </header>
+
+
+
+    <!---------------   CONTENIDO PRINCIPAL   --------------->
+    <main>
+
+        <!---------------   CARRUSEL   --------------->
+        <section class="carrusel">
+
+            <div class="carrusel-pista">
+
+                <!-- DIAPOSITIVA 1 -->
+                <article class="diapositiva">
+                    <img src="img/home/portada-1.jpg" alt="Portada 1" class="imagen-portada">
+                    <div class="filtro-portada"></div>
+
+                    <div class="texto-portada">
+                        <h1>Organizá tu propio torneo</h1>
+                        <p>
+                            Torneo Pro te permite organizar torneos de fútbol,
+                            registrar equipos y administrar tus competiciones
+                            desde un solo lugar.
+                        </p>
+                        <!-- BOTÓN CREAR TORNEOS -->
+                        <section class="seccion-crear">
+                            <a href="crear-torneo.php" class="boton-crear">Crear Torneos</a>
+                        </section>
+                    </div>
+
+                    
+                </article>
+
+                <!-- DIAPOSITIVA -->
+                <article class="diapositiva">
+                    <img src="img/home/portada-2.jpg" alt="Portada 2" class="imagen-portada">
+                    <div class="filtro-portada"></div>
+
+                    <div class="texto-portada">
+                        <h2>Todo tu torneo organizado</h2>
+                        <p>
+                            Consultá las tablas de posiciones, organizá los
+                            partidos y mantené toda la información de tu
+                            torneo ordenada.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- DIAPOSITIVA -->
+                <article class="diapositiva">
+                    <video src="img/home/portada-3.mp4" class="imagen-portada" muted playsinline preload="auto"></video>
+                    <div class="filtro-portada"></div>
+
+                    <div class="texto-portada">
+                        <h2>Seguí cada partido</h2>
+                        <p>
+                            Cargá los resultados, mirá cómo cambian las
+                            posiciones y compartí tu torneo con todos
+                            los participantes.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </section> 
+
+
+        <!---------------   NÚMEROS   --------------->
+        <section class="franja">
+            <div class="franja-interna">
+
+                <h2>Torneo Pro en números</h2>
+
+                <div class="numeros">
+
+                    <div class="numero">
+                        <strong>+[200]</strong>
+                        <span>torneos creados</span>
+                    </div>
+
+                    <div class="numero">
+                        <strong>+[2000]</strong>
+                        <span>equipos registrados</span>
+                    </div>
+
+                    <div class="numero">
+                        <strong>+[6000]</strong>
+                        <span>partidos</span>
+                    </div>
+
+                    <div class="numero">
+                        <strong>+[10000]</strong>
+                        <span>jugadores registrados</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!---------------   TARJETAS   --------------->
+        <section class="zona-contenido">
+
+            <h2>Así verás tus torneos</h2>
+
+            <div class="contenido">
+
+                <!-- COLUMNA IZQUIERDA -->
+                <div class="columna">
+
+                    <article class="tarjeta tarjeta-grande">
+                        <div class="contenedor-imagen">
+                            <img src="img/contenido-1.jpg" alt="Tablas de posiciones">
+                        </div>
+                        <div class="texto-tarjeta">
+                            <h2>Cómo se verán las tablas</h2>
+                            <p>Consultá las posiciones, los puntos y los resultados de cada equipo.</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <div class="contenedor-imagen">
+                            <img src="img/torneos/torneo-pasos.png" alt="Crear torneo">
+                        </div>
+                        <div class="texto-tarjeta">
+                            <h2>Creá tu torneo</h2>
+                            <p>Configurá tu competición en pocos pasos.</p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- COLUMNA DERECHA -->
+                <div class="columna columna-derecha">
+
+                    <article class="tarjeta">
+                        <div class="contenedor-imagen">
+                            <img src="img/contenido-3.jpg" alt="Registro de equipos">
+                        </div>
+                        <div class="texto-tarjeta">
+                            <h2>Registro de equipos</h2>
+                            <p>Conocé cómo se mostrarán los equipos registrados.</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <div class="contenedor-imagen">
+                            <img src="img/contenido-4.jpg" alt="Panel del torneo">
+                        </div>
+                        <div class="texto-tarjeta">
+                            <h2>Panel del torneo</h2>
+                            <p>Administrá todo tu torneo desde un solo lugar.</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <div class="contenedor-imagen">
+                            <img src="img/contenido-5.jpg" alt="Partidos y resultados">
+                        </div>
+                        <div class="texto-tarjeta">
+                            <h2>Partidos y resultados</h2>
+                            <p>Organizá los encuentros y consultá los resultados.</p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!---------------   OPINIONES DE ORGANIZADORES   --------------->
+        <section class="franja">
+            <div class="franja-interna">
+
+                <h2>Opiniones de organizadores</h2>
+
+                <div class="opiniones">
+
+                    <figure class="opinion">
+                        <blockquote>[Opinión del organizador: qué logró con Torneo Pro]</blockquote>
+                        <figcaption class="opinion-autor">
+                            <!-- FOTO: poné el enlace de la imagen en src -->
+                            <img src="" alt="Foto del organizador">
+                            <div>
+                                <strong>[Nombre y apellido]</strong>
+                                <span>Organizador de [nombre del torneo]</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="opinion">
+                        <blockquote>[Opinión del organizador: qué logró con Torneo Pro]</blockquote>
+                        <figcaption class="opinion-autor">
+                            <img src="" alt="Foto del organizador">
+                            <div>
+                                <strong>[Nombre y apellido]</strong>
+                                <span>Organizador de [nombre del torneo]</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="opinion">
+                        <blockquote>[Opinión del organizador: qué logró con Torneo Pro]</blockquote>
+                        <figcaption class="opinion-autor">
+                            <img src="" alt="Foto del organizador">
+                            <div>
+                                <strong>[Nombre y apellido]</strong>
+                                <span>Organizador de [nombre del torneo]</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="opinion">
+                        <blockquote>[Opinión del organizador: qué logró con Torneo Pro]</blockquote>
+                        <figcaption class="opinion-autor">
+                            <img src="" alt="Foto del organizador">
+                            <div>
+                                <strong>[Nombre y apellido]</strong>
+                                <span>Organizador de [nombre del torneo]</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!---------------   PASOS (última sección)   --------------->
+        <section class="franja franja-final">
+            <div class="franja-interna">
+
+                <h2>Cómo funciona</h2>
+
+                <ol class="pasos">
+
+                    <li class="paso">
+                        <span class="paso-numero">1</span>
+                        <h3>Creá tu torneo</h3>
+                        <p>Elegí el nombre, el formato y la cantidad de equipos.</p>
+                    </li>
+
+                    <li class="paso">
+                        <span class="paso-numero">2</span>
+                        <h3>Registrá los equipos</h3>
+                        <p>Cargá los equipos y sus jugadores en pocos clics.</p>
+                    </li>
+
+                    <li class="paso">
+                        <span class="paso-numero">3</span>
+                        <h3>Organizá los partidos</h3>
+                        <p>Armá el calendario con fechas, horarios y canchas.</p>
+                    </li>
+
+                    <li class="paso">
+                        <span class="paso-numero">4</span>
+                        <h3>Cargá los resultados</h3>
+                        <p>Las tablas de posiciones se actualizan solas.</p>
+                    </li>
+
+                </ol>
+
+            </div>
+
+            <!-- BOTÓN CREAR TORNEOS -->
+            <section class="seccion-crear">
+                <a href="crear-torneo.php" class="boton-crear">Crear Torneos</a>
+            </section>
+        </section>
+
+    </main>
+
+
+
+    <!---------------   FOOTER   --------------->
+    <footer class="pie">
+
+        <div class="informacion-footer">
+            <span>© 2026 Torneo Pro</span>
+            <a href="tel:+541124562353">Contacto 11 2456-2353</a>
+            <a href="mailto:CorreoElectronico@gmail.com">CorreoElectronico@gmail.com</a>
+        </div>
+
+        <div class="enlaces-footer">
+            <a href="#"><img src="img/iconos/logo-facebook.webp" alt="Facebook"></a>
+            <a href="#"><img src="img/iconos/logo-instagram.webp" alt="Instagram"></a>
+            <a href="https://www.youtube.com/"><img src="img/iconos/logo-youtube.webp" alt="Youtube"></a>
+            <a href="#"><img src="img/iconos/logo-x.webp" alt="X"></a>
+            <a href="#"><img src="img/iconos/logo-whatsapp.webp" alt="WhatsApp"></a>
+        </div>
+
+    </footer>
+
+    <script src="js/home.js"></script>
+
+</body>
+</html>
