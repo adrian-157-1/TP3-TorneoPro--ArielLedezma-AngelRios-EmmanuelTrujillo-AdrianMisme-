@@ -1,140 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Tienda · Torneo Pro</title>
-  <link rel="stylesheet" href="tienda.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torneo Pro - Tienda</title>
+  <link rel="stylesheet" href="styles/tienda.css">
 </head>
-<body class="pag-tienda">
-
-  <header class="top">
-    <a class="brand" href="index.html">
-      <span class="brand-logo">TP</span>
-      <span class="brand-name">Torneo Pro</span>
+<body>
+ 
+  <!-- NAV (40px, siempre arriba) -->
+  <nav class="nav">
+    <a class="nav__brand" href="#">
+      <img class="nav__logo" src="" alt="Logo Torneo Pro"> <!-- 👉 TU ENLACE: logo -->
+      <span>Torneo Pro</span>
     </a>
-    <nav class="menu">
-      <a href="index.html">Home</a>
-      <a class="activo" href="tienda.html">Tienda</a>
-      <a href="torneos.html">Torneos</a>
-      <a class="user" href="login.html" aria-label="Mi cuenta">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
-          <circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3.2"/>
-          <path d="M5.5 19c1.5-3 4-4 6.5-4s5 1 6.5 4"/>
-        </svg>
-      </a>
-    </nav>
-  </header>
-
-  <div class="barra-tienda">
-    <span>Tienda</span>
-    <a class="btn-carrito" href="carrito.html" aria-label="Carrito">
-      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#fff" stroke-width="2">
-        <circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/>
-        <path d="M2 3h3l2.5 12h11l2-8H6"/>
-      </svg>
-    </a>
-  </div>
-
-  <main>
-
-    <!-- Categorías -->
-    <section class="cats">
-      <a href="botines.html"><img src="images/cat-botines.jpg" alt=""><h2>Botines</h2></a>
-      <a href="pelotas.html"><img src="images/cat-pelotas.jpg" alt=""><h2>Pelotas</h2></a>
-      <a href="camisetas.html"><img src="images/cat-camisetas.jpg" alt=""><h2>Camisetas</h2></a>
-      <a href="trofeos.html"><img src="images/cat-trofeos.jpg" alt="Grandes trofeos del deporte mundial"></a>
-    </section>
-
-    <!-- Trofeos -->
-    <section class="destacados">
-      <h2>Trofeos mas destacados</h2>
-      <div class="carr">
-        <button class="flecha izq" aria-label="Anterior">‹</button>
-        <div class="pista">
-          <a class="prod" href="producto.html?id=t1"><img src="images/trofeo-1.jpg" alt=""><h3>Copa del Mundo FIFA</h3><p class="precio">$ 115.000</p><p class="est"><span>★★★★★</span> 5.0</p></a>
-          <a class="prod" href="producto.html?id=t2"><img src="images/trofeo-2.jpg" alt=""><h3>Copa Libertadores</h3><p class="precio">$ 86.000</p><p class="est"><span>★★★★☆</span> 4.0</p></a>
-          <a class="prod" href="producto.html?id=t3"><img src="images/trofeo-3.jpg" alt=""><h3>Trofeo Nations League</h3><p class="precio">$ 99.000</p><p class="est"><span>★★★★★</span> 5.0</p></a>
-          <a class="prod" href="producto.html?id=t4"><img src="images/trofeo-4.jpg" alt=""><h3>Copa Champions League</h3><p class="precio">$ 65.000</p><p class="est"><span>★★★★☆</span> 4.0</p></a>
-        </div>
-        <button class="flecha der" aria-label="Siguiente">›</button>
-      </div>
-    </section>
-
-    <!-- Camisetas -->
-    <section class="destacados">
-      <h2>Camisetas mas destacados</h2>
-      <div class="carr">
-        <button class="flecha izq" aria-label="Anterior">‹</button>
-        <div class="pista">
-          <a class="prod" href="producto.html?id=c1"><img src="images/camiseta-1.jpg" alt=""><h3>Adidas Camiseta Titular de Argentina 2025/26</h3><p class="precio">$ 95.000</p><p class="est"><span>★★★★★</span> 5.0</p></a>
-          <a class="prod" href="producto.html?id=c2"><img src="images/camiseta-2.jpg" alt=""><h3>Messi Camiseta de Seleccion Argentina 2026</h3><p class="precio">$ 108.000</p><p class="est"><span>★★★★★</span> 5.0</p></a>
-          <a class="prod" href="producto.html?id=c3"><img src="images/camiseta-3.jpg" alt=""><h3>Puma Camiseta Titular del Manchester City</h3><p class="precio">$ 102.000</p><p class="est"><span>★★★★★</span> 5.0</p></a>
-          <a class="prod" href="producto.html?id=c4"><img src="images/camiseta-4.jpg" alt=""><h3>Nike Camiseta Titular de Paises Bajos</h3><p class="precio">$ 93.000</p><p class="est"><span>★★★★☆</span> 4.0</p></a>
-        </div>
-        <button class="flecha der" aria-label="Siguiente">›</button>
-      </div>
-    </section>
-
-    <!-- Pelotas -->
-    <section class="destacados">
-      <h2>Pelotas mas destacados</h2>
-      <div class="carr">
-        <button class="flecha izq" aria-label="Anterior">‹</button>
-        <div class="pista">
-          <a class="prod" href="producto.html?id=p1"><img src="images/pelota-1.jpg" alt=""><h3>Pelota turquesa con detalles blancos</h3><p class="precio">$ 95.000</p><p class="est"><span>★★★★★</span> 5.0</p></a>
-          <a class="prod" href="producto.html?id=p2"><img src="images/pelota-2.jpg" alt=""><h3>Pelota rosa intenso con blanco</h3><p class="precio">$ 105.000</p><p class="est"><span>★★★★★</span> 5.0</p></a>
-          <a class="prod" href="producto.html?id=p3"><img src="images/pelota-3.jpg" alt=""><h3>Pelota negra con detalles rosas</h3><p class="precio">$ 82.000</p><p class="est"><span>★★★★☆</span> 4.0</p></a>
-          <a class="prod" href="producto.html?id=p4"><img src="images/pelota-4.jpg" alt=""><h3>Pelota bordó con franjas blancas</h3><p class="precio">$ 94.000</p><p class="est"><span>★★★★☆</span> 4.0</p></a>
-        </div>
-        <button class="flecha der" aria-label="Siguiente">›</button>
-      </div>
-    </section>
-
-    <!-- Botines -->
-    <section class="destacados">
-      <h2>Botines mas destacados</h2>
-      <div class="carr">
-        <button class="flecha izq" aria-label="Anterior">‹</button>
-        <div class="pista">
-          <a class="prod" href="producto.html?id=b1"><img src="images/botin-1.jpg" alt=""><h3>Botines blancos con detalles dorados</h3><p class="precio">$ 104.000</p><p class="est"><span>★★★★★</span> 5.0</p></a>
-          <a class="prod" href="producto.html?id=b2"><img src="images/botin-2.jpg" alt=""><h3>Botines negros de caña alta</h3><p class="precio">$ 108.000</p><p class="est"><span>★★★★★</span> 5.0</p></a>
-          <a class="prod" href="producto.html?id=b3"><img src="images/botin-3.jpg" alt=""><h3>Botines blancos con detalles negros y coral</h3><p class="precio">$ 93.000</p><p class="est"><span>★★★★☆</span> 4.0</p></a>
-          <a class="prod" href="producto.html?id=b4"><img src="images/botin-4.jpg" alt=""><h3>Botines blancos con detalles rojos</h3><p class="precio">$ 102.000</p><p class="est"><span>★★★★★</span> 5.0</p></a>
-        </div>
-        <button class="flecha der" aria-label="Siguiente">›</button>
-      </div>
-    </section>
-
-  </main>
-
-  <div class="pagos">
-    <img src="images/medios-de-pago.png" alt="Mercado Pago, Visa, Mastercard, American Express, Naranja X, Rapipago y Pago Fácil">
-  </div>
-
-  <footer class="pie">
-    <address>
-      <b>Contactanos:</b><br>
-      11 9 5555-5555<br>
-      correoelectronico@gmail.com
-    </address>
-    <div class="redes">
-      <a href="#" aria-label="Facebook">f</a>
-      <a href="#" aria-label="Instagram">◎</a>
-      <a href="#" aria-label="YouTube">▶</a>
-      <a href="#" aria-label="Twitter">t</a>
-      <a href="#" aria-label="WhatsApp">w</a>
+    <div class="nav__links">
+      <a href="#">Home</a>
+      <a href="#">Tienda</a>
+      <a href="#">Torneos</a>
+      <img class="nav__user" src="" alt="Usuario"> <!-- 👉 TU ENLACE: icono usuario -->
     </div>
+  </nav>
+ 
+  <!-- BARRA TIENDA + CARRITO -->
+  <div class="subbar">
+    <span>Tienda</span>
+    <button class="subbar__cart" aria-label="Carrito">
+      <img src="" alt="Carrito"> <!-- 👉 TU ENLACE: icono carrito -->
+    </button>
+  </div>
+ 
+  <main class="main">
+ 
+    <!-- CARRUSEL (600px de alto, 4 imágenes) -->
+    <section class="carousel" id="carousel">
+      <div class="carousel__track" id="carouselTrack">
+ 
+        <article class="slide">
+          <img class="slide__img" src="" alt="Slide 1"> <!-- 👉 TU ENLACE: imagen 1 -->
+          <div class="slide__info">
+            <h2>Título 1</h2>
+            <p>Descripción del primer slide.</p>
+            <a href="#" class="slide__btn">Ver más</a>
+          </div>
+        </article>
+ 
+        <article class="slide">
+          <img class="slide__img" src="" alt="Slide 2"> <!-- 👉 TU ENLACE: imagen 2 -->
+          <div class="slide__info">
+            <h2>Título 2</h2>
+            <p>Descripción del segundo slide.</p>
+            <a href="#" class="slide__btn">Ver más</a>
+          </div>
+        </article>
+ 
+        <article class="slide">
+          <img class="slide__img" src="" alt="Slide 3"> <!-- 👉 TU ENLACE: imagen 3 -->
+          <div class="slide__info">
+            <h2>Título 3</h2>
+            <p>Descripción del tercer slide.</p>
+            <a href="#" class="slide__btn">Ver más</a>
+          </div>
+        </article>
+ 
+        <article class="slide">
+          <img class="slide__img" src="" alt="Slide 4"> <!-- 👉 TU ENLACE: imagen 4 -->
+          <div class="slide__info">
+            <h2>Título 4</h2>
+            <p>Descripción del cuarto slide.</p>
+            <a href="#" class="slide__btn">Ver más</a>
+          </div>
+        </article>
+ 
+      </div>
+      <button class="carousel__btn carousel__btn--prev" id="prev" aria-label="Anterior">&#10094;</button>
+      <button class="carousel__btn carousel__btn--next" id="next" aria-label="Siguiente">&#10095;</button>
+      <div class="carousel__dots" id="dots"></div>
+    </section>
+ 
+    <!-- CATEGORÍAS -->
+    <section class="categories" id="categories"></section>
+ 
+    <!-- SECCIONES DE PRODUCTOS (las genera app.js) -->
+    <div id="productSections"></div>
+ 
+  </main>
+ 
+  <!-- FOOTER (40px, siempre abajo) -->
+  <footer class="footer">
+    <div class="footer__pay" id="payMethods"></div>
+    <div class="footer__social" id="socials"></div>
   </footer>
-
-  <script>
-    // Flechas de los carruseles
-    document.querySelectorAll('.carr').forEach(function (c) {
-      var pista = c.querySelector('.pista');
-      c.querySelector('.izq').onclick = function () { pista.scrollBy({left: -pista.clientWidth, behavior: 'smooth'}); };
-      c.querySelector('.der').onclick = function () { pista.scrollBy({left: pista.clientWidth, behavior: 'smooth'}); };
-    });
-  </script>
-
+ 
+  <script src="js/tienda.js"></script>
 </body>
 </html>
